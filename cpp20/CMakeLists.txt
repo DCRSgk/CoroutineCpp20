@@ -1,8 +1,10 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.16)
+project(cpp20)
 
-get_filename_component(ROOT_DIR ${CMAKE_CURRENT_LIST_DIR} PATH)
+set(CMAKE_CXX_STANDARD 20)
 
-project(cpp20 CXX)
+set(CMAKE_CXX_FLAGS  "-fcoroutines")
 
-set(CMAKE_BUILD_TYPE Debug)
-add_subdirectory(src)
+add_executable("cpp20"
+./src/main.cpp)
+

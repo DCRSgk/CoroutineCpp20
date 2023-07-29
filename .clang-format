@@ -1,0 +1,25 @@
+# doc: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+Standard: Cpp20
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 0
+AccessModifierOffset: -4
+NamespaceIndentation: All
+BreakBeforeBraces: Custom
+AllowShortFunctionsOnASingleLine: Inline
+PointerAlignment: Left
+IndentCaseLabels: true
+BraceWrapping:
+  AfterEnum: false
+  AfterStruct: false
+  AfterClass: true
+  SplitEmptyFunction: true
+  AfterControlStatement: false
+  AfterNamespace: true
+  AfterFunction: false
+  AfterUnion: true
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true

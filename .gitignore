@@ -1,0 +1,9 @@
+build
+*.kdev4
+logs
+*~
+.vscode
+*.swp
+*.kate-swp
+.DS_Store
+.idea
