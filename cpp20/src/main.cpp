@@ -1,7 +1,5 @@
-#include "normal_fibonacci.hpp"
 #include "coroutine_fibonacci.hpp"
-
-
+#include "normal_fibonacci.hpp"
 
 int main() {
     auto generator = fibonacci();

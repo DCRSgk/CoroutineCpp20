@@ -2,8 +2,8 @@
 > 协程相关学习笔记 附相关demo辅助学习用
 ## 参考链接:
 
-> [cppreference]:https://en.cppreference.com/w/cpp/language/coroutines
-> [BennyHuo的专栏渡劫C++协程]:https://www.bennyhuo.com/book/cpp-coroutines/00-foreword.html
+> -  cppreference:https://en.cppreference.com/w/cpp/language/coroutines
+> -  BennyHuo的专栏渡劫C++协程:https://www.bennyhuo.com/book/cpp-coroutines/00-foreword.html
 
 
 
@@ -22,4 +22,5 @@
 - 
 
 TODO: 
-写个具体协程切换例子测试消耗
+- 测试协程和普通线程切换的消耗
+- 
