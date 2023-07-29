@@ -17,9 +17,10 @@
     > - sudo apt update
     > - sudo apt install gcc-11 g++-11
     > - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 60 --slave /usr/bin/g++ g++ /usr/bin/g++-11
-- 自行安装cmake
-- 编译: 执行: `build20.sh`
-- 
+- 自行安装cmake、clang-format
+- 编译: 执行: `build20.sh` 
+- 进入 /cpp20/build/
+- ./cpp20 执行
 
 TODO: 
 - 测试协程和普通线程切换的消耗
