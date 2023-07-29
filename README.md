@@ -12,11 +12,11 @@
 ## How to use
 
 - 确保gcc版本在10或者更高
-    > sudo apt install software-properties-common
-    > sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-    > sudo apt update
-    > sudo apt install gcc-11 g++-11
-    > sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 60 --slave /usr/bin/g++ g++ /usr/bin/g++-11
+    > - sudo apt install software-properties-common
+    > - sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+    > - sudo apt update
+    > - sudo apt install gcc-11 g++-11
+    > - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 60 --slave /usr/bin/g++ g++ /usr/bin/g++-11
 - 自行安装cmake
 - 编译: 执行: `build20.sh`
 - 
