@@ -1,17 +1,25 @@
 # CoroutineCpp20
 > 协程相关学习笔记 附相关demo辅助学习用
-##参考链接:
+## 参考链接:
 
 > [cppreference]:https://en.cppreference.com/w/cpp/language/coroutines
-> [BennyHuo的专栏渡劫C++携程]:https://www.bennyhuo.com/book/cpp-coroutines/00-foreword.html
->
-> 
+> [BennyHuo的专栏渡劫C++协程]:https://www.bennyhuo.com/book/cpp-coroutines/00-foreword.html
 
 
 
 
 
+## How to use
 
+- 确保gcc版本在10或者更高
+    > sudo apt install software-properties-common
+    > sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+    > sudo apt update
+    > sudo apt install gcc-11 g++-11
+    > sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 60 --slave /usr/bin/g++ g++ /usr/bin/g++-11
+- 自行安装cmake
+- 编译: 执行: `build20.sh`
+- 
 
-├── cpp11: 函数栈实现的携程 
-└── cpp20: 自带的无栈携程demo
+TODO: 
+写个具体协程切换例子测试消耗

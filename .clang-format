@@ -1,5 +1,4 @@
 # doc: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
-Standard: Cpp20
 BasedOnStyle: LLVM
 IndentWidth: 4
 ColumnLimit: 0
