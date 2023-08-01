@@ -16,8 +16,10 @@ Modification  :
 class Fibonacci
 {
 public:
-    int next() {
-        if (a == -1) {
+    int next()
+    {
+        if (a == -1)
+        {
             a = 0;
             b = 1;
             return 0;

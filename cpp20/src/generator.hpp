@@ -34,18 +34,21 @@ struct Generator {
 
         std::suspend_always final_suspend() noexcept { return {}; }
 
-        std::suspend_always yield_value(int value) {
+        std::suspend_always yield_value(int value)
+        {
             this->value = value;
             is_ready = true;
             return {};
         }
 
         // 为了简单，这里认为序列生成器当中不会抛出异常，所以这里不做任何处理
-        void unhandled_exception() {
+        void unhandled_exception()
+        {
             //TODO: 添加一些异常处理
         }
 
-        Generator get_return_object() {
+        Generator get_return_object()
+        {
             return Generator{std::coroutine_handle<promise_type>::from_promise(*this)};
         }
 
@@ -54,24 +57,31 @@ struct Generator {
 
     std::coroutine_handle<promise_type> handle;
 
-    bool has_next() {
-        if (handle.done()) {
+    bool has_next()
+    {
+        if (handle.done())
+        {
             return false;
         }
 
-        if (!handle.promise().is_ready) {
+        if (!handle.promise().is_ready)
+        {
             handle.resume();
         }
 
-        if (handle.done()) {
+        if (handle.done())
+        {
             return false;
-        } else {
+        } else
+        {
             return true;
         }
     }
 
-    int next() {
-        if (has_next()) {
+    int next()
+    {
+        if (has_next())
+        {
             handle.promise().is_ready = false;
             return handle.promise().value;
         }
@@ -87,7 +97,8 @@ struct Generator {
     Generator(Generator&) = delete;
     Generator& operator=(Generator&) = delete;
 
-    ~Generator() {
+    ~Generator()
+    {
         if (handle)
             handle.destroy();
     }

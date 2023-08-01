@@ -9,16 +9,18 @@ AllowShortFunctionsOnASingleLine: Inline
 PointerAlignment: Left
 IndentCaseLabels: true
 BraceWrapping:
+  AfterCaseLabel: true
   AfterEnum: false
   AfterStruct: false
   AfterClass: true
   SplitEmptyFunction: true
   AfterControlStatement: false
   AfterNamespace: true
-  AfterFunction: false
+  AfterFunction: true
   AfterUnion: true
   AfterExternBlock: false
   BeforeCatch: false
   BeforeElse: false
   SplitEmptyRecord: true
   SplitEmptyNamespace: true
+  AfterControlStatement: Always

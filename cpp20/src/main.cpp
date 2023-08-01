@@ -1,14 +1,18 @@
-#include "coroutine_fibonacci.hpp"
-#include "normal_fibonacci.hpp"
+// #include "coroutine_fibonacci.hpp"
+// #include "normal_fibonacci.hpp"
 
-int main() {
+int main()
+{
     auto generator = fibonacci();
     auto fib = Fibonacci();
-    for (int i = 0; i < 10; ++i) {
-        if (generator.has_next()) {
+    for (int i = 0; i < 10; ++i)
+    {
+        if (generator.has_next())
+        {
             std::cout << "generator --> " << generator.next() << " "
                       << "normal --> " << fib.next() << std::endl;
-        } else {
+        } else
+        {
             break;
         }
     }
