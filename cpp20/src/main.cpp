@@ -1,5 +1,6 @@
-// #include "coroutine_fibonacci.hpp"
-// #include "normal_fibonacci.hpp"
+#include "coroutine_fibonacci.hpp"
+#include "normal_fibonacci.hpp"
+#include "../src/util/io_util.hpp"
 
 int main()
 {
@@ -9,8 +10,8 @@ int main()
     {
         if (generator.has_next())
         {
-            std::cout << "generator --> " << generator.next() << " "
-                      << "normal --> " << fib.next() << std::endl;
+            debug("generator --> ",generator.next());
+            debug("normal --> ",fib.next());
         } else
         {
             break;
